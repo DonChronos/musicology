@@ -104,3 +104,63 @@ main button {
   padding: 20px 80px;
   cursor: pointer;
 }
+
+.dance_tour {
+  height: 963px;
+  background-color: #ff6309;
+  background-image: url('../img/dots.png');
+  background-position-x: -500px;
+  background-position-y: -250px;
+  background-repeat: no-repeat;
+}
+
+.dance_header {
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-top: 106px;
+}
+
+.dance_text {
+  font-family: Montserrat;
+  font-size: 30px;
+  color: white;
+  padding-left: 365px;
+  width: 835px;
+  text-indent: -39px;
+}
+
+.dance_cards {
+  display: flex;
+  padding-left: 98px;
+  justify-content: space-between;
+  padding-right: 99px;
+}
+
+.dance_card {
+  height: 493px;
+  width: 372px;
+  background-color: #2c2c2c;
+}
+
+.dance_card img {
+  height: 324px;
+}
+
+.dance_card div {
+  font-family: Oswald;
+  font-size: 37px;
+  color: white;
+  text-align: center;
+  padding-top: 38px;
+}
+
+.dance_card p {
+  font-family: Montserrat;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
