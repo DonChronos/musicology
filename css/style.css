@@ -1,3 +1,56 @@
+@font-face {
+  font-family: "Oswald";
+  src: url('../fonts/Oswald-Regular.woff') format('woff'),
+       url('../fonts/Oswald-Regular.woff2') format('woff2'),
+       url('../fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url('../fonts/Oswald-DemiBold.woff') format('woff'),
+       url('../fonts/Oswald-DemiBold.woff2') format('woff2'),
+       url('../fonts/Oswald-DemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url('../fonts/Oswald-Bold.woff') format('woff'),
+       url('../fonts/Oswald-Bold.woff2') format('woff2'),
+       url('../fonts/Oswald-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('../fonts/Montserrat-Regular.woff') format('woff'),
+       url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+       url('../fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url('../fonts/Nunito-Regular.woff') format('woff'),
+       url('../fonts/Nunito-Regular.woff2') format('woff2'),
+       url('../fonts/Nunito-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: Oswald;
+}
+
+nav a {
+  font-family: Oswald;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav {
+  padding-top: 19px;
+}
+
 .header {
   background-color: #2c2c2c;
   height: 105px;
@@ -11,7 +64,7 @@
   padding-bottom: 16px;
 }
 
-.menu {
+.search {
   padding-top: 19px;
 }
 
