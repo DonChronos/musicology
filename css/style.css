@@ -128,8 +128,8 @@ button {
   font-family: Montserrat;
   font-size: 30px;
   color: white;
-  padding-left: 365px;
-  width: 835px;
+  margin-left: 25%;
+  max-width: 835px;
   text-indent: -39px;
 }
 
@@ -172,7 +172,7 @@ button {
 }
 
 .dance_card img {
-  height: 324px;
+  width: 100%;
 }
 
 .pricing {
@@ -204,11 +204,35 @@ button {
 
 .flex {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .flex img {
   width: 50%;
   height: 963px;
+}
+
+.flex_item {
+  margin: auto;
+}
+
+.flex_item p {
+  max-width: 612px;
+  text-indent: 0;
+  margin-left: 0;
+}
+
+.flex_item div {
+  padding-left: 0;
+  text-align: left;
+}
+
+.flex_item button {
+  font-size: 25px;
+  background-color: #2c2c2c;
+  border-color: #2c2c2c;
+  padding: 20px 119px;
+  margin-top: 35px;
 }
 
 .amazing {
@@ -219,29 +243,6 @@ button {
 }
 
 
-.amazing_flex_item {
-  margin: auto;
-}
-
-.amazing_flex_item p {
-  width: 612px;
-  text-indent: 0;
-  padding-left: 0;
-}
-
-.amazing_flex_item div {
-  padding-left: 0;
-  text-align: left;
-}
-
-.amazing_flex_item button {
-  font-size: 25px;
-  background-color: #2c2c2c;
-  border-color: #2c2c2c;
-  padding: 20px 119px;
-  margin-top: 35px;
-}
-
 .best {
   background-color: #ff6309;
   background-image: url('../img/dots_best.png');
@@ -249,26 +250,28 @@ button {
   background-position-y: 400px;
 }
 
-
-.best_flex_item {
-  margin: auto;
-}
-
-.best_flex_item p {
-  width: 612px;
-  text-indent: 0;
-  padding-left: 0;
-}
-
-.best_flex_item div {
-  padding-left: 0;
-  text-align: left;
-}
-
-.best_flex_item button {
-  font-size: 25px;
+.stats {
   background-color: #2c2c2c;
-  border-color: #2c2c2c;
-  padding: 20px 119px;
-  margin-top: 35px;
+}
+
+.stats .section_header {
+  padding-top: 207px;
+}
+
+.stats .section_subtxt {
+  margin-bottom: 195px;
+}
+
+.stats_number {
+  font-family: Oswald;
+  font-size: 67px;
+  color: white;
+  text-align: center;
+}
+
+.stats_word {
+  font-family: Montserrat;
+  font-size: 42px;
+  color: white;
+  text-align: center;
 }
