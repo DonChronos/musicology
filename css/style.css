@@ -275,3 +275,25 @@ button {
   color: white;
   text-align: center;
 }
+
+.herbert {
+  background-image: url('../img/dancer_herbert.jpg');
+  background-size: 100%;
+  background-position-x: 0;
+  background-position-y: 0;
+}
+
+.herbert .section_subtxt {
+  font-family: Nunito;
+  font-size: 50px;
+  margin-top: 0;
+  padding-top: 330px;
+  max-width: 912px;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.herbert .section_header {
+  font-size: 58px;
+  padding-top: 0;
+}
