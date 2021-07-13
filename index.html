@@ -11,136 +11,142 @@
 </head>
 <body>
   <header class="header">
-    <div class="header_flex">
-      <div>
-        <a href="">
-          <img src="img/logo.png" alt="">
-        </a>
-      </div>
-      <div class="menu">
-        <nav class="header_nav">
-          <a href="#">HOME</a>
-          <a href="#">PRODUCT</a>
-          <a href="#">PROMO</a>
-          <a href="#">ABOUT</a>
-          <a href="#">CONTACT</a>
-        </nav>
-      </div>
-      <div class="header_search">
-        <img src="img/search.png" alt="">
-      </div>
+    <div class="header__logo">
+      <a href="">
+        <img src="img/logo.png" alt="">
+      </a>
     </div>
+    <nav class="header__nav">
+      <a href="#top">HOME</a>
+      <a href="#product">PRODUCT</a>
+      <a href="#promo">PROMO</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="header__search">
+      <img src="img/search.png" alt="">
+    </div>
+    <ul class="header__collapsible">
+      <input type="checkbox" id="collapse">
+      <label for="collapse">☰</label>
+      <li><a href="#top">HOME</a></li>
+      <li><a href="#product">PRODUCT</a></li>
+      <li><a href="#promo">PROMO</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+      <li><img src="img/search.png" alt=""></li>
+    </ul>
   </header>
   <main class="main">
-    <div class="main_header">Title Here</div>
-    <p class="main_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    <button type="button" class="main_button">REGISTER NOW</button>
+    <div class="main__header">Title Here</div>
+    <p class="main__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <button type="button" class="main__button">REGISTER NOW</button>
   </main>
-  <section class="dance_tour section">
-    <div class="section_header">DANCE TOUR</div>
-    <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    <div class="section_cards">
-      <div class="dance_card section_card">
+  <section id="product" class="dance-tour section">
+    <div class="section__header">DANCE TOUR</div>
+    <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <div class="section__cards">
+      <div class="dance-tour__card section__card">
         <img src="img/dancer_america.jpg" alt="">
         <div>AMERICA</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div class="dance_card section_card">
+      <div class="dance-tour__card section__card">
         <img src="img/dancer_asia.jpg" alt="">
         <div>ASIA</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div class="dance_card section_card">
+      <div class="dance-tour__card section__card">
         <img src="img/dancer_australia.jpg" alt="">
         <div>AUSTRALIA</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
     </div>
   </section>
-  <section class="pricing section">
-    <div class="section_header">PRICING</div>
-    <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    <div class="section_cards">
-      <div class="pricing_card section_card">
+  <section id="promo" class="pricing section">
+    <div class="section__header">PRICING</div>
+    <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <div class="section__cards">
+      <div class="pricing__card section__card">
         <img src="img/medal.png" alt="">
         <div>BASIC</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button type="button" class="pricing_button">$150.00</button>
+        <button type="button" class="pricing__button">$150.00</button>
       </div>
-      <div class="pricing_card section_card">
+      <div class="pricing__card section__card">
         <img src="img/medal.png" alt="">
         <div>PROFESSIONAL</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button type="button" class="pricing_button">$200.00</button>
+        <button type="button" class="pricing__button">$200.00</button>
       </div>
-      <div class="pricing_card section_card">
+      <div class="pricing__card section__card">
         <img src="img/medal.png" alt="">
         <div>ULTIMATE</div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <button type="button" class="pricing_button">$250.00</button>
+        <button type="button" class="pricing__button">$250.00</button>
       </div>
     </div>
   </section>
   <section class="amazing section">
     <div class="flex">
       <img src="img/dancer_amazing.jpg" alt="">
-      <div class="flex_item">
-        <div class="section_header">
+      <div class="flex__item">
+        <div class="section__header">
           AMAZING DANCE
         </div>
-        <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
         <button type="button">READ MORE</button>
       </div>
     </div>
   </section>
   <section class="best section">
     <div class="flex">
-      <div class="flex_item">
-        <div class="section_header">
+      <div class="flex__item">
+        <div class="section__header">
           BEST DANCE
         </div>
-        <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+        <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
         <button type="button">READ MORE</button>
       </div>
       <img src="img/dancer_best.jpg" alt="">
     </div>
   </section>
-  <section class="stats section">
-    <div class="section_header">
+  <section id="about" class="stats section">
+    <div class="section__header">
       OUR STATISTICS
     </div>
-    <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
     <div class="flex">
       <div>
-        <div class="stats_number">1240+</div>
-        <div class="stats_word">Club</div>
+        <div class="stats__number">1240+</div>
+        <div class="stats__word">Club</div>
       </div>
       <div>
-        <div class="stats_number">2000+</div>
-        <div class="stats_word">Active Members</div>
+        <div class="stats__number">2000+</div>
+        <div class="stats__word">Active Members</div>
       </div>
       <div>
-        <div class="stats_number">1000+</div>
-        <div class="stats_word">Community</div>
+        <div class="stats__number">1000+</div>
+        <div class="stats__word">Community</div>
       </div>
     </div>
   </section>
   <section class="herbert section">
-    <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    <div class="section_header">HERBERT SIMON</div>
+    <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <div class="section__header">HERBERT SIMON</div>
   </section>
   <section class="subscribe section">
-    <div class="section_header">SUBSCRIBE</div>
-    <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-    <div class="flex_subscribe flex">
+    <div class="section__header">SUBSCRIBE</div>
+    <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</p>
+    <div class="flex__subscribe flex">
       <input type="text" name="subscribe" value="" placeholder="Your Email">
       <button type="button" name="subscribe">SUBSCRIBE</button>
     </div>
   </section>
-  <footer class="footer">
-    <div class="footer_musicology">
-      <div class="section_header">MUSICOLOGY</div>
-      <p class="section_subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
+  <footer id="contact" class="footer">
+    <div class="footer__musicology">
+      <div class="section__header">MUSICOLOGY</div>
+      <p class="section__subtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Aliquam at dignissim nunc, id maximus ex. Etiam nec dignissim elit, at dignissim enim.</p>
       <ul>
         <li>
           <a href="#"><img src="img/icon_instagram.png" alt="instagram"></a>
@@ -156,8 +162,8 @@
         </li>
       </ul>
     </div>
-    <div class="footer_about">
-      <div class="section_header">ABOUT</div>
+    <div class="footer__about">
+      <div class="section__header">ABOUT</div>
       <ul>
         <li>History</li>
         <li>Our Team</li>
@@ -166,8 +172,8 @@
         <li>Privacy Policy</li>
       </ul>
     </div>
-    <div class="footer_services">
-      <div class="section_header">SERVICES</div>
+    <div class="footer__services">
+      <div class="section__header">SERVICES</div>
       <ul>
         <li>How to Order</li>
         <li>Our Product</li>
@@ -176,14 +182,15 @@
         <li>Payment Menthod</li>
       </ul>
     </div>
-    <div class="footer_others">
-      <div class="section_header">OTHER</div>
+    <div class="footer__others">
+      <div class="section__header">OTHER</div>
       <ul>
         <li>Contact Us</li>
         <li>Help</li>
         <li>Privacy</li>
       </ul>
     </div>
+    <a href="http://www.freepik.com" class="attribution">Designed by Freepik</a>
   </footer>
 </body>
 </html>

@@ -47,21 +47,24 @@ button {
   cursor: pointer;
 }
 
+
 .header {
   background-color: #2c2c2c;
-  height: 102px;
-}
-
-.header_flex {
   display: flex;
   padding-left: 81px;
   padding-right: 58px;
-  padding-top: 19px;
-  padding-bottom: 16px;
   justify-content: space-between;
 }
 
-.header_nav a {
+.header__logo {
+  padding-top: 19px;
+}
+
+.header__nav {
+  padding-top: 38px;
+}
+
+.header__nav a {
   font-family: Oswald;
   color: #fff;
   text-decoration: none;
@@ -69,30 +72,189 @@ button {
   margin-left: 46px;
 }
 
-.header_nav {
-  padding-top: 19px;
+.header__search {
+  padding-top: 32px;
 }
 
-.header_search {
-  padding-top: 19px;
+.header__collapsible {
+  display: none;
+  list-style: none;
+}
+
+.header__collapsible li {
+  display: block;
+  background-color: #2c2c2c;
+
+}
+
+.header__collapsible li a {
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  visibility: hidden;
+  position: absolute;
+}
+
+#collapse:checked ~ li {
+  display: none;
+  margin-top: 0;
+}
+
+@media (max-width: 912px) {
+  .header {
+    padding: 0;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__search {
+    display: none;
+  }
+
+  .header__collapsible {
+    display: block;
+    font-size: 32px;
+    color: white;
+    z-index: 0;
+  }
+
+  .main .main__header {
+    font-size: 45px;
+    padding-top: 20%;
+  }
+
+  .main .main__subtxt {
+    font-size: 22px;
+    width: auto;
+  }
+
+  .section .section__header {
+    font-size: 45px
+  }
+
+  .section .section__subtxt {
+    font-size: 22px;
+    width: 60%;
+  }
+
+  .pricing__card .pricing__button {
+    padding: 0;
+  }
+
+  .section__cards .pricing__card div {
+    font-size: 22px;
+  }
+
+  .stats .flex {
+    flex-direction: column;
+  }
+
+  .stats .flex div {
+    padding-bottom: 15px;
+  }
+
+  body .herbert {
+    background-position-x: 50%;
+  }
+
+  .footer div .section__header {
+    font-size: 22px;
+  }
+
+  .footer div .section__subtxt {
+    font-size: 16px;
+  }
+
+  .footer ul li {
+    font-size: 16px;
+  }
+
+  .footer a img {
+    width: 22px;
+  }
+}
+
+@media (max-width: 680px) {
+  .main .main__header {
+    font-size: 22px;
+    padding-left: 0;
+  }
+
+  .main .main__subtxt {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  .main .main__button {
+    padding: 5px 20px;
+  }
+
+  .section .section__header {
+    font-size: 22px;
+  }
+
+  .section .section__subtxt {
+    font-size: 18px;
+  }
+
+  .section .section__cards {
+    padding: 0;
+  }
+
+  .section__cards .section__card div {
+    font-size: 22px;
+  }
+
+  .section__cards .section__card p {
+    font-size: 18px;
+  }
+
+  .flex .flex__item button {
+    padding: 5px 15px;
+  }
+
+  .subscribe .flex__subscribe {
+    justify-content: center;
+  }
+
+  .subscribe .flex__subscribe input {
+    margin-left: 0;
+  }
+
+  .herbert .section__subtxt {
+    font-size: 18px !important;
+  }
+
+  .herbert .section__header {
+    font-size: 22px !important;
+  }
+
+  .footer .section__header {
+    padding-top: 0;
+  }
+
 }
 
 .main {
   background-image: url('../img/dancer_main.jpg');
-  height: 693px;
   background-repeat: no-repeat;
   background-color: #ff6309;
   background-size: 100%;
 }
 
-.main_header {
+.main__header {
   font-size: 125px;
   color: white;
-  padding-top: 268px;
+  padding-top: 12%;
   padding-left: 81px;
 }
 
-.main_subtxt {
+.main__subtxt {
   font-family: Montserrat;
   font-size: 30px;
   color: white;
@@ -100,22 +262,23 @@ button {
   width: 612px;
 }
 
-.main_button {
+.main__button {
   font-size: 30px;
   padding: 20px 80px;
   background-color: #ff6309;
   margin-left: 81px;
   border-color: #ff6309;
+  margin-bottom: 10px;
 }
 
 .section {
-  height: 963px;
+  padding-bottom: 100px;
   background-position-x: -500px;
   background-position-y: -250px;
   background-repeat: no-repeat;
 }
 
-.section_header {
+.section__header {
   font-family: Oswald;
   font-size: 75px;
   font-weight: 700;
@@ -124,7 +287,7 @@ button {
   padding-top: 106px;
 }
 
-.section_subtxt {
+.section__subtxt {
   font-family: Montserrat;
   font-size: 30px;
   color: white;
@@ -133,20 +296,20 @@ button {
   text-indent: -39px;
 }
 
-.section_cards {
+.section__cards {
   display: flex;
   padding-left: 98px;
   justify-content: space-between;
   padding-right: 99px;
 }
 
-.section_card {
-  height: 493px;
-  width: 372px;
+.section__card {
+  width: 30%;
   border-radius: 5px;
+  padding-bottom: 10px;
 }
 
-.section_card div {
+.section__card div {
   font-family: Oswald;
   font-size: 37px;
   color: white;
@@ -154,7 +317,7 @@ button {
   padding-top: 38px;
 }
 
-.section_card p {
+.section__card p {
   font-family: Montserrat;
   font-size: 22px;
   color: white;
@@ -162,16 +325,16 @@ button {
   margin: 0;
 }
 
-.dance_tour {
+.dance-tour {
   background-color: #ff6309;
   background-image: url('../img/dots_dance.png')
 }
 
-.dance_card {
+.dance-tour__card {
   background-color: #2c2c2c;
 }
 
-.dance_card img {
+.dance-tour__card img {
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -182,26 +345,27 @@ button {
   background-image: url('../img/dots_pricing.png');
 }
 
-.pricing_card {
+.pricing__card {
   background-color: #ff6309;
   text-align: center;
 }
 
-.pricing_card div {
+.pricing__card div {
   font-weight: 700;
   margin-bottom: 31px;
 }
 
-.pricing_card img {
+.pricing__card img {
   padding-top: 64px;
 }
 
-.pricing_button {
+.pricing__button {
     font-size: 25px;
     background-color: #2c2c2c;
     border-color: #2c2c2c;
-    padding: 20px 119px;
+    padding: 20px 30%;
     margin-top: 35px;
+    margin-bottom: 10px;
 }
 
 .flex {
@@ -211,25 +375,25 @@ button {
 
 .flex img {
   width: 50%;
-  height: 963px;
+  flex-shrink: 0;
 }
 
-.flex_item {
+.flex__item {
   margin: auto;
 }
 
-.flex_item p {
+.flex__item p {
   max-width: 612px;
   text-indent: 0;
   margin-left: 0;
 }
 
-.flex_item div {
+.flex__item div {
   padding-left: 0;
   text-align: left;
 }
 
-.flex_item button {
+.flex__item button {
   font-size: 25px;
   background-color: #2c2c2c;
   border-color: #2c2c2c;
@@ -237,15 +401,18 @@ button {
   margin-top: 35px;
 }
 
-.amazing {
+.amazing, .best {
   background-color: #ff6309;
+  padding: 0;
+}
+
+.amazing {
   background-image: url('../img/dots_amazing.png');
   background-position-x: 800px;
   background-position-y: 400px;
 }
 
 .best {
-  background-color: #ff6309;
   background-image: url('../img/dots_best.png');
   background-position-x: -200px;
   background-position-y: 400px;
@@ -255,22 +422,22 @@ button {
   background-color: #2c2c2c;
 }
 
-.stats .section_header {
+.stats .section__header {
   padding-top: 207px;
 }
 
-.stats .section_subtxt {
+.stats .section__subtxt {
   margin-bottom: 195px;
 }
 
-.stats_number {
+.stats__number {
   font-family: Oswald;
   font-size: 67px;
   color: white;
   text-align: center;
 }
 
-.stats_word {
+.stats__word {
   font-family: Montserrat;
   font-size: 42px;
   color: white;
@@ -286,11 +453,11 @@ button {
 
 @media (max-width: 1440px) {
   .herbert {
-    background-size: auto;
+    background-size: cover;
   }
 }
 
-.herbert .section_subtxt {
+.herbert .section__subtxt {
   font-family: Nunito;
   font-size: 50px;
   margin-top: 0;
@@ -300,7 +467,7 @@ button {
   text-align: center;
 }
 
-.herbert .section_header {
+.herbert .section__header {
   font-size: 58px;
   padding-top: 0;
 }
@@ -311,15 +478,15 @@ button {
   background-color: #ff6309;
 }
 
-.subscribe .section_header {
+.subscribe .section__header {
   padding-top: 132px;
 }
 
-.flex_subscribe {
+.flex__subscribe {
   justify-content: flex-start;
 }
 
-.flex_subscribe input {
+.flex__subscribe input {
   font-family: Montserrat;
   font-size: 25px;
   margin-left: 25%;
@@ -328,29 +495,29 @@ button {
   width: 33%;
 }
 
-.flex_subscribe button {
+.flex__subscribe button {
   font-family: Oswald;
   font-size: 25px;
   font-weight: 600;
   background-color: #2c2c2c;
   border-color: #2c2c2c;
   text-align: center;
-  width: 222px;
 }
 
 .footer {
   display: flex;
+  position: relative;
   height: 477px;
   background-color: #2c2c2c;
   justify-content: space-evenly;
 }
 
-.footer .section_header {
+.footer .section__header {
   display: inline-block;
   font-size: 33px;
 }
 
-.footer .section_subtxt {
+.footer .section__subtxt {
   font-size: 20px;
   margin-left: 0;
   text-indent: 0;
@@ -367,18 +534,25 @@ button {
   font-size: 20px;
 }
 
-.footer_musicology {
+.footer__musicology {
   width: 30%;
 }
 
-.footer_musicology ul {
+.footer__musicology ul {
   width: 190px;
 }
 
-.footer_musicology li {
+.footer__musicology li {
   display: inline;
   font-family: Oswald;
   font-size: 16px;
   width: 44px;
   height: 44px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-decoration: none;
 }
